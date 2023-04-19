@@ -30,11 +30,11 @@ getFrequencies(const std::string& filename)
 
     char ch; 
     while (file.get(ch)) {
-        std::cout << ch; 
+        //std::cout << ch; 
+        um[ch] += 1; 
     }
 
     file.close(); 
-
 
     return um;
 }
